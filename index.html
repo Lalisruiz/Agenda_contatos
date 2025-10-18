@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Agenda de contatos</h1>
+        <h1><i class="fas fa-address-book"></i> Agenda de contatos</h1>
         <form id="contactForm">
-            <label for="nome">Nome:</label>
+            <label for="nome"><i class="fas fa-user"></i> Nome:</label>
             <input type="text" id="nome" required>
 
-            <label for="telefone">Telefone:</label>
+            <label for="telefone"><i class="fas fa-phone"></i> Telefone:</label>
             <input type="tel" id="telefone" required>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Adicionar Contato">
         </form>
 
-        <h2>Lista de Contatos</h2>
+        <h2><i class="fas fa-list"></i> Lista de Contatos</h2>
         <table id="contactTable">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Telefone</th>
+                    <th><i class="fas fa-user"></i> Nome</th>
+                    <th><i class="fas fa-phone"></i> Telefone</th>
+                    <th><i class="fas fa-cogs"></i> Ações</th>
                 </tr>
             </thead>
             <tbody>
                 
             </tbody>
         </table>
-    </div>
     </div>
     <script src="main.js"></script>
 </body>
